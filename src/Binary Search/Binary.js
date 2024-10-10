@@ -4,7 +4,6 @@
  * @param {number} value
  * @returns {number}
  */
-
 function binarySearch(array, value) {
   const n = array.length;
   if (n === 0) {
@@ -24,13 +23,12 @@ function binarySearch(array, value) {
     } else {
       left = middle + 1;
     }
-    return -1;
   }
+
+  return -1;
 }
 
-// const result = binarySearch([1, 2, 3, 6, 9, 11], 6); => 3
-// console.log(result); -> 3
+const result = binarySearch([1, 2, 3, 6, 9, 11], 6);
+console.log(result);
 
-// const result = binarySearch([1, 2, 3, 12, 14, 16], 5); => -1
-// console.log(result); -> 3
 export default { binarySearch };
