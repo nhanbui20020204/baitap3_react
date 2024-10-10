@@ -1,4 +1,4 @@
-function cycle(...props) {
+function Cycle(...props) {
   let index = 0;
   return function () {
     const result = props[index];
@@ -6,8 +6,5 @@ function cycle(...props) {
     return result;
   };
 }
-const onOffFn = cycle("on", "off");
-console.log(onOffFn()); // "on"
-console.log(onOffFn()); // "off"
-console.log(onOffFn()); // "on"
-console.log(onOffFn()); // "off"
+
+export default Cycle;

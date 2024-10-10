@@ -4,6 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Binary from "./Binary Search/Binary";
+import Cycle from "./Cycle('on', 'off')/Cycle";
+
+const onOffFn = Cycle("on", "off");
+
+// In ra kết quả trên console
+console.log(onOffFn()); // "on"
+console.log(onOffFn()); // "off"
+console.log(onOffFn()); // "on"
+console.log(onOffFn()); // "off"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
